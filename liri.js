@@ -42,6 +42,13 @@ function concert() {
 
 }
 
+function movie() {
+    axios.get("http://www.imdb.com/title/tt0485947/")
+    .then(function(response){
+        console.log(response.data)
+    })
+}
+
 switch(command){
     case "spotify-this-song": 
     song()
